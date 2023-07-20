@@ -1,61 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300&family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300&family=Inter&family=Poppins:ital,wght@0,300;0,400;1,300&display=swap');
 
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Inter', sans-serif;
-    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body{
+    min-height: 100vh;
     width: 100%;
     display: flex;
-    min-height: 100vh;
-    background-color: #121212;
     justify-content: center;
     align-items: center;
-   
-
 }
+
+
+
 
 .box{
-
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: #3b3b3b;
-    box-shadow: 10px 10px 10px #252525;
-   width: 300px;
-   
-    
-}
-
-.contador{
-    margin-top: 20px;
-    justify-content: center;
     display: flex;
-    gap: 50px;
-   color: white;
-   font-size: 1.5rem;
-}
-
-.contador button{
-    font-size: 1.5rem;
-    background-color: transparent;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
-
-
-#reset{
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    background-color: #bad3f3;
+    width: 700px;
     
-    padding: 10px 15px;
-    background-color: #601bd2;
-    border: none;
-    color: #fff;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    margin-top: 15px;
-    cursor: pointer;
+    box-shadow: 7px 7px 7px #121212;
+
+}
+
+#time{
+    display: flex;
+    justify-content: space-around;
+}
+
+.tempo{
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: bolder;
 }

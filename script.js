@@ -1,28 +1,24 @@
-var mais = document.getElementById('plus')
-var menos = document.getElementById('menos')
-var reset = document.getElementById('reset')
-var mostrar = document.querySelector('.result')
+const horas = document.getElementById('horas')
+const minutos = document.getElementById('minutos')
+const segundos = document.getElementById('segundos')
 
-const updateResult = ()=>{
-    mostrar.textContent = contar
-}
+const relogio = setInterval(function time(){
+    let date = new Date();
+    let hr = date.getHours();
+    let min = date.getMinutes();
+    let seg = date.getSeconds();
 
-let contar = 0;
+    if(hr < 10) hr = "0" + hr
 
-mais.addEventListener('click', ()=>{
-    contar++;
-   updateResult();
+    if(min < 10) min = "0" + min
 
+    if(seg < 10) seg = "0" + seg
+
+
+    horas.textContent = hr;
+    minutos.textContent = min;
+    segundos.textContent = seg
 })
 
-menos.addEventListener('click', ()=>{
-    contar--;
-   updateResult();
 
-})
-
-reset.addEventListener('click', ()=>{
-    contar = 0;
-    updateResult();
-})
 
